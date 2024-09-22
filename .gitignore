@@ -2,4 +2,5 @@ node_modules
 logs
 dist
 coverage
+# Ignore environment variable files
 .env
