@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Start the application
-CMD ["nodemon", "--exec", "ts-node", "src/app.ts"]
+CMD ["npx", "nodemon", "--exec", "npx", "ts-node", "src/app.ts"]
