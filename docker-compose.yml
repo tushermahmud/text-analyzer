@@ -4,10 +4,14 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - "4000:4000"
     environment:
-      - MONGODB_URI=mongodb://mongo:27017/mydatabase
+      - MONGO_URL=mongodb://mongo:27017/mydatabase
       - REDIS_URL=redis://redis:6379
+      - GOOGLE_CLIENT_ID=863508525170-grjl43rpa6keerlfq387ur0shbbijcrn.apps.googleusercontent.com
+      - GOOGLE_CLIENT_SECRET=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
+      - SESSION_SECRET=749f9b32876c708f1a9a7e3d75f584ef9d19088553637960e01fd0757c461c09
+      - PORT:4000
     depends_on:
       - mongo
       - redis

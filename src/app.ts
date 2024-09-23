@@ -1,9 +1,10 @@
+
+import * as dotenv from 'dotenv';
+dotenv.config(); 
 import express from "express";
 import connectDB from "./config/db";
 import logger from "./config/logger";
 import cors from "cors";
-import dotenv from "dotenv";
-dotenv.config();
 import routesRegistration from "./routes/init";
 import rateLimit from "express-rate-limit";
 import session from "express-session";
